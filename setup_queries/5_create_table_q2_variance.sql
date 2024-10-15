@@ -1,4 +1,4 @@
---Create the q2 variance table
+--Create the 2nd quarter variance table
 CREATE TABLE q2_variance AS
     WITH q2_budget AS 
     (   
@@ -22,13 +22,12 @@ CREATE TABLE q2_variance AS
         CASE
             WHEN budget_amount = 0 AND actual_amount = 0 THEN NULL
             ELSE ROUND(((budget_amount - actual_amount)/budget_amount) * 100, 2) 
-        END AS variance_percentage,
+            END AS variance_percentage,
         CASE 
             WHEN budget_amount - actual_amount < 0 THEN 'unfavorable'
             WHEN budget_amount - actual_amount > 0 THEN 'favorable'
             ELSE NULL
-        END AS favorability
-    
+            END AS favorability
     FROM q2_budget b
     FULL OUTER JOIN q2_actuals a
         ON b.budget_month = a.actual_month
