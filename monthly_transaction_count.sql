@@ -1,3 +1,5 @@
+-- Count of each transaction category each month and the amount of money spent per transaction
+-- Cost per dining transaction between 5 to 15 usd more than price per groceries each month
 SELECT
     DATE_TRUNC('month', transaction_date),
     category,
@@ -14,4 +16,3 @@ ORDER BY
     DATE_TRUNC('month', transaction_date), 
     category
 
--- cost per dining transaction almost 10 usd more than price per groceries
