@@ -1,3 +1,4 @@
+-- Ranking the categories by total variance for Q2 2004
 SELECT
     category,
     SUM(variance_amount),
