@@ -1,4 +1,5 @@
 -- Count of each transaction category and the amount of money spent per transaction
+
 SELECT
     category,
     SUM(amount_usd) AS total_amount,
