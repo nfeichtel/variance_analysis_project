@@ -1,4 +1,5 @@
 -- Monthly % breakdown of how the budget is allocated by category and how money is actually spent by category
+
 SELECT 
     month,
     category,

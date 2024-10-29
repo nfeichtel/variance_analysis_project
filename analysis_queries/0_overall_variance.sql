@@ -1,4 +1,5 @@
 --Overall variance for 2nd Quarter of 2024
+
 SELECT
     SUM(budget_amount) AS total_budget_amount,
     SUM(actual_amount) AS total_actual_amount,

@@ -1,4 +1,5 @@
 -- Highest and lowest total Q2 2024 variances and %variances by category
+
 SELECT 
     category,
     SUM(variance_amount) AS total_variance,

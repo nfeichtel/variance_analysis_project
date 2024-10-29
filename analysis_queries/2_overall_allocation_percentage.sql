@@ -1,4 +1,5 @@
 -- Overall % breakdown of how the budget is allocated by category and how money is actually spent by category
+
 SELECT 
     category,
     SUM(actual_amount) actual_amount,
