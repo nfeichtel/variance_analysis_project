@@ -7,4 +7,4 @@ SELECT
     ROUND(SUM(budget_amount) / (SELECT SUM(budget_amount) FROM q2_variance) * 100, 2) percent_of_budget_amount
 FROM q2_variance
 GROUP BY category
-ORDER BY category
+ORDER BY ROUND(SUM(actual_amount) / (SELECT SUM(actual_amount) FROM q2_variance) * 100, 2) DESC
