@@ -1,3 +1,5 @@
+-- Monthly variance and %variance for Q2 2024
+
 SELECT 
     month,
     SUM(variance_amount) AS monthly_variance,
