@@ -17,6 +17,15 @@
             "name": "variance_analysis",
             "database": "variance_analysis",
             "username": "postgres"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "instacart",
+            "database": "instacart",
+            "username": "postgres"
         }
     ]
 }
